@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./image/favicon.ico" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/7fb3a48bb2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <!-- SCRIPT -->
+    <script defer src="./src/main.js"></script>
+
+    <title>Hello, Jisoo World!</title>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="logo">
+          <a class="home" href="./index.html">
+            <img src="./image/Logo.svg " alt="logo" />
+          </a>
+        </div>
+        <div class="dark-mode-btn">
+          <i class="fa fa-solid fa-toggle-off"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="main-page">
+      <div class="inner">
+        <h1 class="title">
+          WELCOME TO <br />
+          MY PORTFOLIO SITE!
+        </h1>
+        <button class="go__btn" type="button">GO!</button>
+      </div>
+    </section>
+
+    <nav class="nav">
+      <div class="inner">
+        <i class="back__btn fa fa-solid fa-arrow-left"></i>
+        <ul class="nav__list">
+          <li class="nav__item about__btn">ABOUT</li>
+          <li class="nav__item skill__btn">SKILL</li>
+          <li class="nav__item project__btn">PROJECT</li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="about">
+      <div class="inner">
+        <h1 class="title">ABOUT</h1>
+        <div class="profile">
+          <img
+            class="profile-image"
+            src="./image/profile.jpg"
+            alt="profile-image"
+          />
+          <div class="profile-introduce">
+            <span class="profile-introduce__name">김 지 수 KIM JISOO</span>
+            <p class="profile-introduce__des">
+              안녕하세요. 프론트엔드 개발자를 꿈꾸는 김지수 입니다. 하고자하는
+              일에 걱정과 고민보다는 실행에 옮겨 행동하는 성격으로 누구보다
+              진지한 자세로 배우고 그 배움으로 성장합니다. 개발과는 먼
+              디자이너라는 직업으로 시작했지만, 디자인을 공부하면서 코딩이라는
+              새로운 분야에 흥미를 갖게 되면서 공부를 시작하게 되었습니다.
+              자신을 성장시킬 수 있는 공부를 좋아하기 때문에 변화하는 시대에
+              맞춰 변화가 많은 개발 세계에서 즐겁게 공부하고 성장해나가는
+              개발자가 되도록 노력하겠습니다.
+            </p>
+          </div>
+          <div class="contact">
+            <a class="contact__github" href="javascript:void(0)">
+              <i class="contact__icon fa fa-brands fa-github"></i>
+            </a>
+            <a class="contact__instagram" href="javascript:void(0)">
+              <i class="contact__icon fa fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <button class="btn__more" type="button">MORE</button>
+        <!-- <div class="about__hobby"></div> 어떻게 넣을지 생각해보고 결정 -->
+      </div>
+    </section>
+
+    <section class="skill">
+      <div class="inner">
+        <h1 class="title">SKILL</h1>
+
+        <div class="swiper-container">
+          <ul class="swiper-wrapper skill__list">
+            <li class="swiper-slide skill__item html-css">
+              <span class="item__title html-css__title"> HTML / CSS </span>
+              <p class="item__des html-css__des">
+                제일 기본이 되는 html과 css이기 때문에 무엇보다도 기본에
+                충실하고 잘 다져놔야겠다는 생각을 했습니다. 포트폴리오와
+                프로젝트를 만들면서 html은 static하게 작성하는 것에 가장 신경을
+                많이 쓰고 css는 공통적인 style이 들어가는 부분을 잘 체크해가며
+                불필요하게 중복되는 부분이 없도록 하려고 노력했습니다.
+              </p>
+            </li>
+            <li class="swiper-slide skill__item js">
+              <span class="item__title js__title"> JAVASCRIPT </span>
+              <p class="item__des js__des">
+                자바스크립트에서 많이 사용하는 if문, for문 등에 대해서 열심히
+                공부했습니다. 어느 상황에 어떻게 사용해야될 지에 대해서
+                포트폴리오를 준비하면서 많이 생각해보는 연습을 거치며 연습을
+                했습니다. 자바스크립트의 ES6문법도 그냥 알고있기보다는 정확히
+                사용하는 것에 집중하면서 어떤 문법도 능숙하게 쓸 수 있도록
+                열심히 준비했습니다.
+              </p>
+            </li>
+            <li class="swiper-slide skill__item react">
+              <span class="item__title react__title"> REACT </span>
+              <p class="item__des react__des">
+                리액트는 자바스크립트 공부가 늦어지면서 가장 늦게 접해보게
+                되었습니다. 하지만 자바스크립트를 기초부터 탄탄하게 공부해서
+                리액트를 처음 배우게 되었을 때, 흥미롭고 재밌게 공부할 수
+                있었습니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="inner">
+        <h1 class="title">PROJECT</h1>
+        <ul class="project__list">
+          <li class="project__item">
+            <span class="item item-1">1</span>
+            <a href="javascript:void(0)">
+              <img
+                class="item__image"
+                src="./image/project1.png"
+                alt="portfolio-project"
+              />
+              <p class="item__des">
+                첫 번째 프로젝트는 바로 저 자신을 소개하는 포트폴리오 사이트
+                입니다. 저를 보여줄 수 있는 중요한 부분이기 때문에 많은 시간과
+                노력을 들여 완성하였습니다. 기본기를 잘 쌓는것을 중요하게
+                생각하기 때문에 첫번째 프로젝트는 자바스크립트와 라이브러리를
+                이용하여 만들었습니다.
+              </p>
+            </a>
+          </li>
+          <li class="project__item">
+            <span class="item item-2">2</span>
+            <a href="javascript:void(0)">
+              <img class="item__image" src="" alt="portfolio-project" />
+              <p class="item__des">
+                두 번째 프로젝트는 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ입니다. 첫 번째
+                프로젝트는 가장 기본이 되는 자바스크립트와 몇 가지의
+                라이브러리를 사용해서 만들었다면, 두 번째 프로젝트는 좀 더
+                발전한 모습을 보여드릴 수 있는 리액트를 이용하여 만들었습니다.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <button id="to-top">
+      <i class="fa fa-solid fa-chevron-left"></i>
+    </button>
+  </body>
+</html>

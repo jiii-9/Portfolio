@@ -1,0 +1,41 @@
+.skill {
+  display: none;
+  background-color: rgb(231, 243, 255);
+}
+.skill .inner {
+  height: calc(100vh - 70px);
+}
+.skill .title {
+  text-align: center;
+  font-size: 3.6vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6vh;
+  color: #373737;
+}
+.skill .swiper-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  bottom: 5vh;
+}
+.skill__list .skill__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 420px;
+  border-radius: 20px;
+  padding: 60px 40px;
+  background-color: #999;
+}
+.skill__list .skill__item .item__title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=skill.css.map */

@@ -1,0 +1,84 @@
+.project {
+  display: none;
+  background-color: rgb(231, 243, 255);
+}
+.project .inner {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+}
+.project .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 3.6vw;
+  top: 6vh;
+  color: #373737;
+}
+.project__list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+}
+.project__list .project__item {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 36px 0;
+  margin-right: 150px;
+  background-color: #708fbd;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.project__list .project__item:hover {
+  box-shadow: 7px 7px 10px rgb(201, 201, 201);
+  font-weight: 700;
+}
+.project__list .project__item:hover .item__image {
+  transform: scale(1.2);
+}
+.project__list .project__item:last-child {
+  margin-right: 0;
+}
+.project__list .project__item .item {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  position: absolute;
+  left: calc(-56px / 4);
+  top: calc(-56px / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-weight: 500;
+  color: #f5f9ff;
+  background-color: #154690;
+}
+.project__list .project__item a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.project__list .project__item a .item__image {
+  width: 340px;
+  height: auto;
+  margin-bottom: 30px;
+  transition: all 0.4s ease-in-out;
+}
+.project__list .project__item a .item__des {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #373737;
+}
+
+/*# sourceMappingURL=project.css.map */

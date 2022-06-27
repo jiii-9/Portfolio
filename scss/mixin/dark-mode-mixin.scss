@@ -1,0 +1,79 @@
+@import '../color.scss';
+@import './flex-mixin.scss';
+
+.dark-mode {
+  .main-page {
+    background-color: $background-color-dark;
+    .title{
+      color: $font-color-dark;
+    }
+    .go__btn {
+      border: 1px solid $main-color-dark;
+      color: $main-color-dark;
+
+      &:hover {
+        color: $main-color-light;
+        background-color: $white-color; 
+      }
+    }
+  }
+
+  .about {
+    background-color: $background-color-dark;
+    .title {
+      color: $font-color-dark;
+    }
+    .profile {
+      &-introduce {
+        &__name {
+          color: $font-color-dark;          
+        }
+        &__des {
+          color: $font-color-dark;
+        }
+      }
+    }
+    .contact {
+      &__icon {
+        border-radius: 50%;
+        transition: all .3s ease-in-out;
+        &:hover {
+          border: none;
+          background-color: $background-color-light;
+        }
+    }
+  }
+    .btn__more {
+      border: 1px solid $main-color-dark;
+      color: $main-color-dark;
+      &:hover {
+        color: $main-color-light;
+        background-color: $main-color-dark;
+      }
+    }
+  }
+
+  .skill {
+    background-color: $background-color-dark;
+    .title {
+      color: $font-color-dark;
+    }
+  }
+
+  .project {
+    background-color: $background-color-dark;
+    .title {
+      color: $font-color-dark;
+    }
+  }
+
+  #to-top {
+    border: 2px solid $default-white;
+    color: $default-white;
+    
+    &:hover {
+      color: $main-color-light;
+      background-color: $default-white;
+    }
+  }
+}

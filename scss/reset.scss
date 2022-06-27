@@ -1,0 +1,75 @@
+@import './color.scss';
+@import './position-height.scss';
+@import './mixin/font-mixin.scss';
+@import './mixin/dark-mode-mixin.scss';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{ 
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#to-top {
+  @include flex-center;
+  @include font-30;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 46px;
+  height: 46px;
+  border: 2px solid $main-color-light;
+  border-radius: 10px;
+  padding-top: 1px;
+  transform: rotate(90deg);
+  color: $main-color-light;
+  background-color: transparent;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: $default-white;
+    background-color: $main-color-light;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

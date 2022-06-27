@@ -1,0 +1,43 @@
+@import './color.scss';
+@import './position-height.scss';
+@import './mixin/mixin.scss';
+@import './mixin/font-mixin.scss';
+
+/* MAIN PAGE */
+.main-page {
+  margin-top: $header-height;
+  background-color: $background-color-light;
+
+  .inner {
+    height: $page-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    @include title;
+    margin-bottom: 180px;
+    font-weight: 700;
+    color: $font-color-light;
+  }
+
+  .go__btn {
+    width: 120px;
+    height: 120px;
+    border: 2px solid $main-color-light;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: 500;
+    color: $main-color-light;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $white-color;
+      background-color: $main-color-light;
+      cursor: pointer;
+    }
+  }
+}

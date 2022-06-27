@@ -1,0 +1,93 @@
+@import './color.scss';
+@import './position-height.scss';
+@import './mixin/mixin.scss';
+@import './mixin/font-mixin.scss';
+@import './mixin/flex-mixin.scss';
+
+$project-num-size: 56px;
+
+// PROJECT
+.project {
+  display: none;
+  background-color: $background-color-light;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    height: $page-height;
+  }
+  
+  .title {
+    @include position-x;
+    @include title;
+    top: $title-position-top;
+    color: $font-color-light;
+  }
+
+  &__list {
+    @include position-x;
+    display: flex;
+    position: absolute;
+    bottom: $item-position-bottom;
+
+    .project__item {
+      position: relative;
+      width: 400px;
+      height: 450px;
+      border-radius: 20px;
+      padding: 36px 0;
+      margin-right: 150px;
+      background-color: $sub-color-light;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 7px 7px 10px rgb(201, 201, 201);
+        font-weight: 700;
+
+        .item__image {
+          transform: scale(1.2);
+          
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .item {
+        @include font-18;
+        position: absolute;
+        left: calc(-#{$project-num-size} / 4);
+        top: calc(-#{$project-num-size} / 2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $project-num-size;
+        height: $project-num-size;
+        border-radius: 50%;
+        font-weight: 500;
+        color: $default-white;
+        background-color: $main-color-light;
+      }
+
+      a {
+        @include position-x;
+        overflow: hidden;
+
+        .item__image {
+          // 이미지 사이즈는 프로젝트 대표 이미지 생기면 그 때 다시 조정
+          width: 340px;
+          height: auto;
+          margin-bottom: 30px;
+          transition: all .4s ease-in-out;
+        }
+  
+        .item__des {
+          @include font-16;
+          color: $font-color-light;
+        }
+      }
+    }
+  }
+}

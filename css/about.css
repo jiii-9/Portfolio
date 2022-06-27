@@ -1,0 +1,92 @@
+.about {
+  display: none;
+  background-color: rgb(231, 243, 255);
+}
+.about .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 70px);
+}
+.about .title {
+  text-align: center;
+  font-size: 3.6vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6vh;
+  color: #373737;
+}
+.about .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .profile-image {
+  width: 230px;
+  height: auto;
+  border-radius: 50%;
+}
+.about .profile-introduce__name {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #373737;
+}
+.about .profile-introduce__des {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  width: 700px;
+  font-weight: 300;
+  color: #373737;
+}
+.about .profile .contact {
+  display: flex;
+  flex-direction: column;
+}
+.about .profile .contact__github, .about .profile .contact__instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  border: 3px solid #154690;
+  border-radius: 50%;
+}
+.about .profile .contact__github {
+  margin-bottom: 40px;
+}
+.about .profile .contact__icon {
+  padding: 10px;
+  font-size: 48px;
+  color: #6d6d6d;
+  transition: all 0.3s ease-in-out;
+}
+.about .profile .contact__icon:hover {
+  color: #154690;
+}
+.about .btn__more {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5vh;
+  width: 11vw;
+  height: 5vh;
+  border: 1px solid #154690;
+  border-radius: 0.6vw;
+  font-weight: 600;
+  background-color: transparent;
+  color: #154690;
+  transition: all 0.3s ease-in-out;
+}
+.about .btn__more:hover {
+  color: #f5f9ff;
+  background-color: #154690;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=about.css.map */

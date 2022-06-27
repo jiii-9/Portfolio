@@ -1,0 +1,37 @@
+/* MAIN PAGE */
+.main-page {
+  margin-top: 70px;
+  background-color: rgb(231, 243, 255);
+}
+.main-page .inner {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-page .title {
+  text-align: center;
+  font-size: 3.6vw;
+  margin-bottom: 180px;
+  font-weight: 700;
+  color: #373737;
+}
+.main-page .go__btn {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #154690;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: 500;
+  color: #154690;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.main-page .go__btn:hover {
+  color: #fff;
+  background-color: #154690;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main-page.css.map */

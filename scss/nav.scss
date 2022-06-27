@@ -1,0 +1,69 @@
+@import './position-height.scss';
+@import './header.scss';
+@import './mixin/font-mixin.scss';
+@import './mixin/flex-mixin.scss';
+
+/* NAV */
+.nav {
+  position: absolute; 
+  top: $header-height;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  background-color: rgba(36, 36, 36, .95);
+
+  .inner {
+    height: $page-height;
+  }
+  .back__btn {
+    @include font-24;
+    position: absolute;
+    top:30px;
+    left: 10px;
+    color: $icon-color-dark;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    @include flex-space-around;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .nav__item {
+      position: relative;
+      font-size: 3vw;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px;
+      color: $white-color;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 0;
+        border-bottom: 3px solid $white-color;
+        transition: all .3s ease-in;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

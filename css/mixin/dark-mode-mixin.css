@@ -1,0 +1,64 @@
+.dark-mode .main-page {
+  background-color: rgb(1, 13, 26);
+}
+.dark-mode .main-page .title {
+  color: rgb(231, 243, 255);
+}
+.dark-mode .main-page .go__btn {
+  border: 1px solid #e1eaf7;
+  color: #e1eaf7;
+}
+.dark-mode .main-page .go__btn:hover {
+  color: #154690;
+  background-color: #fff;
+}
+.dark-mode .about {
+  background-color: rgb(1, 13, 26);
+}
+.dark-mode .about .title {
+  color: rgb(231, 243, 255);
+}
+.dark-mode .about .profile-introduce__name {
+  color: rgb(231, 243, 255);
+}
+.dark-mode .about .profile-introduce__des {
+  color: rgb(231, 243, 255);
+}
+.dark-mode .about .contact__icon {
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.dark-mode .about .contact__icon:hover {
+  border: none;
+  background-color: rgb(231, 243, 255);
+}
+.dark-mode .about .btn__more {
+  border: 1px solid #e1eaf7;
+  color: #e1eaf7;
+}
+.dark-mode .about .btn__more:hover {
+  color: #154690;
+  background-color: #e1eaf7;
+}
+.dark-mode .skill {
+  background-color: rgb(1, 13, 26);
+}
+.dark-mode .skill .title {
+  color: rgb(231, 243, 255);
+}
+.dark-mode .project {
+  background-color: rgb(1, 13, 26);
+}
+.dark-mode .project .title {
+  color: rgb(231, 243, 255);
+}
+.dark-mode #to-top {
+  border: 2px solid #f5f9ff;
+  color: #f5f9ff;
+}
+.dark-mode #to-top:hover {
+  color: #154690;
+  background-color: #f5f9ff;
+}
+
+/*# sourceMappingURL=dark-mode-mixin.css.map */
